@@ -1,4 +1,11 @@
-filetype plugin indent on 
+" Stop terminal queries leaking into Vim
+if has('termresponse')
+  set t_u7=
+  set t_RF=
+  set t_RB=
+  set t_RV=
+endif
+filetype plugin indent on
 set encoding=utf-8 
 set nocompatible 
 
